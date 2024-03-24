@@ -6,8 +6,7 @@
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-rgb: 255, 255, 255;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -40,11 +39,23 @@
   --card-border-rgb: 131, 134, 135;
 }
 
+@media (prefers-contrast: less) or (prefers-contrast: more) {
+    :root {
+      --foreground-rgb: 255, 255, 0;
+      --background-rgb: 0, 0, 0;
+      /* --map-tiles-filter: invert(1) contrast(1.5) saturate(1.5) brightness(8); */
+
+  }
+  /* .map-tiles {
+    filter:var(--map-tiles-filter, none);
+  } */
+}
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-rgb: 0, 0, 0;
 
     --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
     --secondary-glow: linear-gradient(
@@ -70,6 +81,10 @@
     --callout-border-rgb: 108, 108, 108;
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
+    --map-tiles-filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
+  }
+  .map-tiles {
+    filter:var(--map-tiles-filter, none);
   }
 }
 
@@ -87,12 +102,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-rgb));
 }
 
 a {
@@ -103,5 +113,82 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  min-height: 100vh;
+  gap: 1rem;
+}
+
+h1 {
+  font-family: var(--font-mono);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  a {
+    margin: 1rem;
+  }
+}
+
+.facebook-link {
+  position: fixed;
+  top: 46%;
+  left: -2.5rem;
+  background-color: #405D9A;
+  border-radius: 0.25rem;
+  color: white;
+  font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  transform: rotate(90deg);
+  padding: 0.5rem 1rem;
+}
+
+.accesibility-menu {
+  position: fixed;
+  top: 5%;
+  z-index: 400;
+  display: flex;
+
+  .narzedzia {
+    background-color: #003f87;
+    border-radius: 0.25rem;
+    color: white;
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-size: 2rem;
+    padding: 0rem 0.75rem 0.3rem;
+    max-height: 48px;
+
+    .ikona {
+      cursor: pointer;
+    }
+  }
+  .menu {
+    border: 1px rgb(var(--foreground-rgb)) solid;
+    background-color: rgb(var(--background-rgb));
+    color: rgb(var(--foreground-rgb));
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 0.5rem;
+
+    h4 {
+      margin: 0.5rem;
+    }
+
+    p {
+      cursor: pointer;
+    }
+    p.active {
+      background-color: rgb(var(--foreground-rgb));
+      color: rgb(var(--background-rgb));
+    }
   }
 }
