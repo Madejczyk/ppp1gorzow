@@ -1,5 +1,5 @@
 import { TypedObject } from "sanity";
-import { sanityFetch } from "../../../sanity/lib/client";
+import { sanityFetch } from "../../sanity/lib/client";
 import { Header } from "../common/Header";
 import { PortableComponent } from "../common/PortableComponent";
 
