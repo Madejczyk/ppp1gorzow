@@ -38,5 +38,28 @@ export default function Dostepnosc() {
         <p>Jeżeli nadal będziesz mieć uwagi do naszych działań związane z dostępnością cyfrową, możesz zgłosić je do&nbsp;<a href="https://bip.brpo.gov.pl/pl/content/zlozenie-wniosku-do-rzecznika-praw-obywatelskich">Rzecznika Praw Obywatelskich</a>.</p>
         <h3 id="”a11y-architektura”">Dostępność architektoniczna</h3>
         <p><strong>Poradnia Psychologiczno-Pedagogiczna numer 1 w Gorzowie Wielkopolskim, ul. Józefa Pankiewicza 5-7 66-400 Gorzów Wlkp.</strong></p>
+        <p>Budynek: Powiat Gorzowski w Gorzowie Wlkp.</p>
+        <p>Do budynku prowadzi 2 wejścia od ul. Pankiewicza 5-7</p>
+        <p>Do wejścia prowadzą: chodnik.</p>
+        <p>Nad wejściem nie ma głośników systemu naprowadzającego dźwiękowo osoby niewidome i
+        słabowidzące.</p>
+        <p>Wejście nie jest zabezpieczone bramkami.</p>
+        <p>W budynku jest winda.</p>
+        <p>Dla osób na wózkach dostępne są korytarze i pomieszczenia na parterze oraz na piętrach
+        1,2,3.</p>
+        <p>Toaleta dla osób niepełnosprawnych znajduje się na każdej kondygnacji.</p>
+        <p>Przed budynkiem wyznaczono 2 miejsca parkingowe dla osób niepełnosprawnych.
+        Do budynku i wszystkich jego pomieszczeń można wejść z psem asystującym i psem
+        przewodnikiem.</p>
+        <p>W budynku nie ma pętli indukcyjnych.</p>
+        <p>W budynku nie ma oznaczeń w alfabecie brajla ani oznaczeń kontrastowych lub w druku
+        powiększonym dla osób niewidomych i słabowidzących.</p>
+        <p>
+        Istnieje możliwość skorzystania z bezpłatnych usług tłumacza migowego w godzinach pracy
+        urzędu, tj.</p>
+        <p>poniedziałek 7.30 - 17.00</p>
+        <p>wtorek-czwartek 7.30 - 15.30</p>
+        <p>piątek 7.30 - 14.00</p>
+        <p>Kontakt: 95 7 330 400 - PUNKT OBSŁUGI INTERESANTA - Parter</p>
     </main>
 }
