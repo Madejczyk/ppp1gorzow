@@ -137,7 +137,7 @@ export const Narzedzia = () => {
     }, [reset])
 
     return <>
-        <div className="narzedzia" onClick={onToggle} ref={iconRef as any} tabIndex={0} onKeyDown={onIconPress}>
+        <div className="narzedzia" onClick={onToggle} ref={iconRef as any} tabIndex={0} onKeyDown={onIconPress} role="button">
             <div className="ikona">
     ♿︎
             </div>

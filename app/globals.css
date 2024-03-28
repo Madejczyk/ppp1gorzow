@@ -103,6 +103,9 @@ body {
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
+  line-height: 1.5em; /*max 1.5*/
+  letter-spacing: 0.01em; /*max 0.12*/
+  word-spacing: 0.01em; /*max 0.16*/
 }
 
 a {
@@ -163,7 +166,7 @@ nav {
     color: white;
     font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
     font-size: 2rem;
-    padding: 0rem 0.75rem 0.3rem;
+    padding: 0.5rem 0.75rem 1rem;
     max-height: 48px;
 
     .ikona {

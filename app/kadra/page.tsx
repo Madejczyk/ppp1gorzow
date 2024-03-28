@@ -2,10 +2,14 @@ import { TypedObject } from "sanity";
 import { sanityFetch } from "../../sanity/lib/client";
 import { Header } from "../common/Header";
 import { PortableComponent } from "../common/PortableComponent";
+import { getMetadata } from "../common/Title";
+const title = 'Kadra'
+export const metadata = getMetadata(title)
 
 type Page = {
     body?: TypedObject | TypedObject[]
-  }
+}
+
 
 export default async function Kadra() {
     const pages: Page[] = await sanityFetch({
@@ -17,7 +21,7 @@ export default async function Kadra() {
 
     return <main>
         <Header />
-        <h2>{"Kadra"}</h2>
+        <h2>{title}</h2>
         {
             pages?.[0] && pages[0].body && <PortableComponent
                 value={pages[0].body}

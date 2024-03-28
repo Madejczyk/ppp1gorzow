@@ -1,9 +1,12 @@
 import { Header } from "../common/Header";
+import { getMetadata } from "../common/Title";
+const title = 'Dostępność'
+export const metadata = getMetadata(title)
 
 export default function Dostepnosc() {
     return <main>
         <Header />
-        <h2>{"Dostępność"}</h2>
+        <h2>{title}</h2>
         <p id='a11y-wstep'>
         <span id='a11y-podmiot'>Poradnia Psychologiczno-Pedagogiczna numer 1 w Gorzowie Wielkopolskim</span> zobowiązuje się zapewnić dostępność swojej strony internetowej zgodnie z przepisami ustawy z dnia 4 kwietnia 2019 r. o dostępności cyfrowej stron internetowych i aplikacji mobilnych podmiotów publicznych.
         </p>
@@ -14,11 +17,16 @@ export default function Dostepnosc() {
         <p id='a11y-status'>
            Strona internetowa jest <strong>częściowo zgodna</strong> z ustawą z dnia 4 kwietnia 2019 r. o dostępności cyfrowej stron internetowych i aplikacji mobilnych podmiotów publicznych z powodu niezgodności lub wyłączeń wymienionych poniżej.
         </p>
-        <h4>Niedostępne elementy i treści</h4>
+        <h4>Niedostępne elementy i treści:</h4>
+        <ul>
+            <li>Brak wyszukiwarki oraz mapy strony.</li>
+            <li>Brak opisu do mapy.</li>
+            <li>Nie wszystkie linki zawierają informacje o rozmiarze plików.</li>
+        </ul>
         <h3>Przygotowanie deklaracji dostępności</h3>
-        <p>Data sporządzenia deklaracji: <span id='a11y-data-sporzadzenie'>2024-XX-XX</span>.</p>
-        <p>Data ostatniego przeglądu deklaracji:<span id='a11y-data-przeglad'>2024-XX-XX</span>.</p>
-        <p>Deklarację sporządzono na podstawie samooceny przeprowadzonej przez podmiot publiczny.</p>
+        <p>Data sporządzenia deklaracji: <span id='a11y-data-sporzadzenie'>2024-03-28</span>.</p>
+        <p>Data ostatniego przeglądu deklaracji: <span id='a11y-data-przeglad'>2024-03-28</span>.</p>
+        <p>Deklarację sporządzono na podstawie samooceny przeprowadzonej przez podmiot prywatny.</p>
         <h3>Skróty klawiaturowe</h3>
         <p>Na tej stronie internetowej można korzystać ze standardowych skrótów klawiaturowych.</p>
         <h3 id='a11y-kontakt'>Informacje zwrotne i dane kontaktowe</h3>

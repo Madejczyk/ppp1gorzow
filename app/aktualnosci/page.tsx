@@ -2,6 +2,7 @@ import { Header } from "../common/Header";
 import {sanityFetch} from '../../sanity/lib/client'
 import type { TypedObject } from "sanity";
 import { PortableComponent } from "../common/PortableComponent";
+import { getMetadata } from "../common/Title";
 
 type Post = {
   _id: string
@@ -9,6 +10,9 @@ type Post = {
   body?: TypedObject | TypedObject[]
   _updatedAt: number
 }
+
+const title = 'Aktualności'
+export const metadata = getMetadata(title)
 
 export default async function Aktualnosci() {
     const posts: Post[] = await sanityFetch({
@@ -23,7 +27,7 @@ export default async function Aktualnosci() {
 
     return <main>
         <Header />
-        <h2>{"Aktualności"}</h2>
+        <h2>{title}</h2>
         <ul>
             {posts.map((post) => {
                 const date = new Date(post?._updatedAt);
