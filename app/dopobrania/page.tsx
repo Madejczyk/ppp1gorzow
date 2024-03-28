@@ -6,10 +6,20 @@ export default function Dopobrania() {
         <Header />
         <h2>{"Do pobrania"}</h2>
         <Link
-            href="/pliki/Zgoda_na_badania.doc"
+            href="/pliki/Informacja_wychowawcy_o_dziecku.docx"
             target="_blank"
             rel="noopener noreferrer"
-        >Zgoda na badania</Link>
+        >Informacja wychowawcy o dziecku</Link>
+        <Link
+            href="/pliki/Ściezka_opinia_ze_szkoły.doc"
+            target="_blank"
+            rel="noopener noreferrer"
+        >Ścieżka - opinia ze szkoły</Link>
+        <Link
+            href="/pliki/Wniosek_o_wydanie_informacji.doc"
+            target="_blank"
+            rel="noopener noreferrer"
+        >Wnioski o wydanie informacji</Link>
         <Link
             href="/pliki/Wniosek_o_wydanie_opinii.doc"
             target="_blank"
@@ -36,14 +46,9 @@ export default function Dopobrania() {
             rel="noopener noreferrer"
         >Zaświadczenie okulistyczne</Link>
         <Link
-            href="/pliki/Informacja_wychowawcy_o_dziecku.docx"
+            href="/pliki/Zgoda_na_badania.doc"
             target="_blank"
             rel="noopener noreferrer"
-        >Informacja wychowawcy o dziecku</Link>
-        <Link
-            href="/pliki/Ściezka-opinia_ze_szkoły.doc"
-            target="_blank"
-            rel="noopener noreferrer"
-        >Ściezka - opinia ze szkoły</Link>
+        >Zgoda na badania</Link>
     </main>
 }
