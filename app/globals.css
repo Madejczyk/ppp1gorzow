@@ -91,6 +91,7 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   background: rgb(var(--header-background-rgb));
+  padding: 0.5rem;
 
   p {
     cursor: pointer;
