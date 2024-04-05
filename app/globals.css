@@ -140,39 +140,13 @@ nav {
   }
 }
 
-.facebook-link {
+.linki {
   position: fixed;
-  top: 46%;
-  left: -2.5rem;
-  background-color: #405D9A;
-  border-radius: 0.25rem;
-  color: white;
-  font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  transform: rotate(90deg);
-  padding: 0.5rem 1rem;
-}
-
-.accesibility-menu {
-  position: fixed;
-  top: 5%;
-  z-index: 400;
+  top: 1%;
   display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 
-  .narzedzia {
-    background-color: #003f87;
-    border-radius: 0.25rem;
-    color: white;
-    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
-    font-size: 2rem;
-    padding: 0.5rem 0.75rem 1rem;
-    max-height: 48px;
-
-    .ikona {
-      cursor: pointer;
-    }
-  }
   .menu {
     border: 1px rgb(var(--foreground-rgb)) solid;
     background-color: rgb(var(--background-rgb));

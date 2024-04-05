@@ -137,10 +137,14 @@ export const Narzedzia = () => {
     }, [reset])
 
     return <>
-        <div className="narzedzia" onClick={onToggle} ref={iconRef as any} tabIndex={0} onKeyDown={onIconPress} role="button">
-            <div className="ikona">
-    ♿︎
-            </div>
+        <div className="narzedzia" onClick={onToggle} ref={iconRef as any} tabIndex={0} onKeyDown={onIconPress} role="button"  title='Narzędzia dostępności'>
+        <img
+            src="/wozek.png"
+            width={50}
+            height={47}
+            alt="Logo - wózka inwalidzkiego"
+            style={{cursor: 'pointer'}}
+        />
         </div>
         {
             isOpen && <div className='menu' ref={menuRef as any}>

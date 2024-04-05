@@ -8,11 +8,11 @@ export default function Dostepnosc() {
         <Header />
         <h2>{title}</h2>
         <p id='a11y-wstep'>
-        <span id='a11y-podmiot'>Poradnia Psychologiczno-Pedagogiczna numer 1 w Gorzowie Wielkopolskim</span> zobowiązuje się zapewnić dostępność swojej strony internetowej zgodnie z przepisami ustawy z dnia 4 kwietnia 2019 r. o dostępności cyfrowej stron internetowych i aplikacji mobilnych podmiotów publicznych.
+        <span id='a11y-podmiot'>Poradnia Psychologiczno-Pedagogiczna Nr 1 w Gorzowie Wielkopolskim</span> zobowiązuje się zapewnić dostępność swojej strony internetowej zgodnie z przepisami ustawy z dnia 4 kwietnia 2019 r. o dostępności cyfrowej stron internetowych i aplikacji mobilnych podmiotów publicznych.
         </p>
         <p>Deklaracja dostępności dotyczy strony internetowej <a id="a11y-url" href='https://ppp1gorzow.pl/'></a>http://ppp1gorzow.pl/</p>
-        <p>Data publikacji strony internetowej: <span id='a11y-data-publikacja'>2024-XX-XX</span>.</p>
-        <p>Data ostatniej istotnej aktualizacji: <span id='a11y-data-aktualizacja'>2024-XX-XX</span>.</p>
+        <p>Data publikacji strony internetowej: <span id='a11y-data-publikacja'>2024-04-05</span>.</p>
+        <p>Data ostatniej istotnej aktualizacji: <span id='a11y-data-aktualizacja'>2024-04-05</span>.</p>
         <h3>Stan dostępności cyfrowej</h3>
         <p id='a11y-status'>
            Strona internetowa jest <strong>częściowo zgodna</strong> z ustawą z dnia 4 kwietnia 2019 r. o dostępności cyfrowej stron internetowych i aplikacji mobilnych podmiotów publicznych z powodu niezgodności lub wyłączeń wymienionych poniżej.
@@ -25,13 +25,13 @@ export default function Dostepnosc() {
         </ul>
         <h3>Przygotowanie deklaracji dostępności</h3>
         <p>Data sporządzenia deklaracji: <span id='a11y-data-sporzadzenie'>2024-03-28</span>.</p>
-        <p>Data ostatniego przeglądu deklaracji: <span id='a11y-data-przeglad'>2024-03-28</span>.</p>
+        <p>Data ostatniego przeglądu deklaracji: <span id='a11y-data-przeglad'>2024-04-05</span>.</p>
         <p>Deklarację sporządzono na podstawie samooceny przeprowadzonej przez podmiot prywatny.</p>
         <h3>Skróty klawiaturowe</h3>
         <p>Na tej stronie internetowej można korzystać ze standardowych skrótów klawiaturowych.</p>
         <h3 id='a11y-kontakt'>Informacje zwrotne i dane kontaktowe</h3>
         <p>Na tej stronie internetowej są problemy, które wynikają z niespełnienia wymogów dostępności cyfrowej? Zgłoś to do{' '}
-        <span id="a11y-osoba">Magdalena Madejczyk</span>, e-mailowo — <a href="mailto:sekretariat@ppp1gorzow.pl" id="a11y-email">sekretariat@ppp1gorzow.pl</a>&nbsp;lub telefonicznie — <span id="a11y-telefon">574-535-707</span>.</p>
+        <span id="a11y-osoba">Magdalena Madejczyk</span>, e-mailowo — <a href="mailto:m.madejczyk@ppp1gorzow.pl" id="a11y-email">m.madejczyk@ppp1gorzow.pl</a>&nbsp;lub telefonicznie — <span id="a11y-telefon">(95)7-330-467; (95)7-330-468</span>.</p>
         <p>W zgłoszeniu podaj:</p>
         <ul>
             <li>swoje imię i nazwisko;</li>
@@ -68,6 +68,6 @@ export default function Dostepnosc() {
         <p>poniedziałek 7.30 - 17.00</p>
         <p>wtorek-czwartek 7.30 - 15.30</p>
         <p>piątek 7.30 - 14.00</p>
-        <p>Kontakt: 95 7 330 400 - PUNKT OBSŁUGI INTERESANTA - Parter</p>
+        <p>Kontakt: (95)7-330-400 - PUNKT OBSŁUGI INTERESANTA - Parter</p>
     </main>
 }
