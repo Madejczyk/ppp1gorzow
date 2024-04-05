@@ -1,6 +1,5 @@
 import { TypedObject } from "sanity";
 import { sanityFetch } from "../../sanity/lib/client";
-import { Header } from "../common/Header";
 import { PortableComponent } from "../common/PortableComponent";
 import { getMetadata } from "../common/Title";
 const title = 'Kadra'
@@ -20,7 +19,6 @@ export default async function Kadra() {
     });
 
     return <main>
-        <Header />
         <h2>{title}</h2>
         {
             pages?.[0] && pages[0].body && <PortableComponent

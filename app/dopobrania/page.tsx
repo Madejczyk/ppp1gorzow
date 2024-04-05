@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Header } from "../common/Header";
 import { getMetadata } from "../common/Title";
 
 const title = 'Do pobrania'
@@ -46,7 +45,6 @@ const listOfFiles = [
 
 export default function Dopobrania() {
     return <main>
-        <Header />
         <h2>{title}</h2>
         <ul>
             {

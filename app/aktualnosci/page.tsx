@@ -1,4 +1,3 @@
-import { Header } from "../common/Header";
 import {sanityFetch} from '../../sanity/lib/client'
 import type { TypedObject } from "sanity";
 import { PortableComponent } from "../common/PortableComponent";
@@ -26,7 +25,6 @@ export default async function Aktualnosci() {
     });
 
     return <main>
-        <Header />
         <h2>{title}</h2>
         <ul>
             {posts.map((post) => {

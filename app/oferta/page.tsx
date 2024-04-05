@@ -1,12 +1,10 @@
 import Link from "next/link";
-import { Header } from "../common/Header";
 import { getMetadata } from "../common/Title";
 const title = 'Oferta'
 export const metadata = getMetadata(title)
 
 export default function Oferta() {
     return <main>
-        <Header />
         <h2>{title}</h2>
         <Link
             href="/pliki/Oferta_PPP1_2023-2024.pdf"

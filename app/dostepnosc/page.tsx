@@ -1,11 +1,9 @@
-import { Header } from "../common/Header";
 import { getMetadata } from "../common/Title";
 const title = 'Dostępność'
 export const metadata = getMetadata(title)
 
 export default function Dostepnosc() {
     return <main>
-        <Header />
         <h2>{title}</h2>
         <p id='a11y-wstep'>
         <span id='a11y-podmiot'>Poradnia Psychologiczno-Pedagogiczna Nr 1 w Gorzowie Wielkopolskim</span> zobowiązuje się zapewnić dostępność swojej strony internetowej zgodnie z przepisami ustawy z dnia 4 kwietnia 2019 r. o dostępności cyfrowej stron internetowych i aplikacji mobilnych podmiotów publicznych.

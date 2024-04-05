@@ -1,12 +1,10 @@
 import Link from "next/link";
-import { Header } from "../common/Header";
 import { getMetadata } from "../common/Title";
 const title = 'Organizacja'
 export const metadata = getMetadata(title)
 
 export default function Organizacja() {
     return <main>
-        <Header />
         <h2>{title}</h2>
         <ul>
         <li><Link href="/kadra">Kadra</Link></li>
