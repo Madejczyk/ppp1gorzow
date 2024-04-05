@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 import { useCallback, useState, useRef, useEffect, type MutableRefObject, type KeyboardEvent } from "react"
 
 
@@ -97,6 +98,7 @@ export const Narzedzia = () => {
 
     return <>
         <div style={{display: "flex", gap: '0.5rem', fontSize: '1.75rem'}}>
+            <Link href="/dostepnosc" title="Deklaracja dostępności">♿︎</Link>
             <p onClick={zoomIn} className={zoom > 1 ? 'active': ''} tabIndex={0} onKeyDown={onZoomInPress} title="Powiększ tekst">A+</p>
             <p onClick={zoomOut} tabIndex={0} onKeyDown={onZoomOutPress} title="Pomniejsz tekst">A-</p>
             <p onClick={toggleColor} className={isGray ? 'active' : ''} tabIndex={0} onKeyDown={onToggleColorPress} title="Skala szarości">◍</p>
