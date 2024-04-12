@@ -3,7 +3,7 @@ import {Narzedzia} from './Narzedzia'
 
 export const Header = () => {
     return <div className='header'>
-        <div style={{display: 'flex', alignItems: 'center', flexWrap: 'wrap'}}>
+        <div style={{display: 'flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center'}}>
             <img
                 src="/logo.png"
                 width={250}
