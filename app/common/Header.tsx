@@ -10,10 +10,10 @@ export const Header = () => {
                 height={150}
                 alt="Logo - chłopiec stojący przy trzech literach P. Symbolizująch skrót: Poradni psychologiczno pedagogicznej"
             />
-            <h1>PPP 1<br/>GORZÓW</h1>
+            <h1>PPP 1 GORZÓW</h1>
         </div>
         <div>
-            <div style={{display: 'flex', justifyContent:'flex-end', gap: '1rem', alignItems: 'center', flexWrap: 'wrap'}}>
+            <div className='menu'>
                 <Narzedzia/>
                 <div style={{display: 'flex', justifyContent: 'center', gap: '1rem'}}>
                     <Link
@@ -58,7 +58,7 @@ export const Header = () => {
                     </Link>
                 </div>
             </div>
-            <nav style={{textTransform: 'uppercase'}}>
+            <nav>
                 <Link href="/#">Strona Główna</Link>
                 <Link href="/aktualnosci">Aktualności</Link>
                 <Link href="/organizacja">Organizacja</Link>

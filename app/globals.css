@@ -80,6 +80,8 @@ main {
 nav {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  text-transform: uppercase;
   a {
     margin: 1rem;
   }
@@ -96,4 +98,19 @@ nav {
   p {
     cursor: pointer;
   }
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap
+}
+
+@media only screen and (max-width: 1270px) {
+  .header, .menu {
+    justify-content: center;
+  }
+
 }
