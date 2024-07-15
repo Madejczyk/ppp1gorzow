@@ -44,8 +44,8 @@ export const Header = () => {
                         />
                     </Link>
                     <Link
-                        title="https://www.facebook.com/poradnianr1gorzow - Otwiera się w nowym oknie przeglądarki"
-                        href='https://www.facebook.com/poradnianr1gorzow'
+                        title="https://www.facebook.com/profile.php?id=61552018888901 - Otwiera się w nowym oknie przeglądarki"
+                        href='https://www.facebook.com/profile.php?id=61552018888901'
                         target="_blank"
                         rel="noopener noreferrer"
                     >
