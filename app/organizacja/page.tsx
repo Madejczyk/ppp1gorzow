@@ -21,11 +21,11 @@ export default function Organizacja() {
             title='Link otwiera się w nowym oknie przeglądarki'
         >Statut (270 KB, PDF)</Link></li>
         <li><Link
-            href="/pliki/Plan_pracy_PPP1 2023-2024.pdf"
+            href="/pliki/Plan_pracy_PPP-1_2024-2025.doc"
             target="_blank"
             rel="noopener noreferrer"
             title='Link otwiera się w nowym oknie przeglądarki'
-        >Plan pracy (471 KB, PDF)</Link></li>
+        >Plan pracy (126 KB, DOC)</Link></li>
         <li><Link
             href="/pliki/Wersja_skrócona_standardy_PPP1.pdf"
             target="_blank"
