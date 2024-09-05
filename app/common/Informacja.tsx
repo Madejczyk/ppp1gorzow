@@ -18,5 +18,7 @@ export const Informacja = () => {
         <p>poniedziałek 7:30 - 17:00</p>
         <p>wtorek - czwartek 7:30 - 15:30</p>
         <p>piątek 7:30 - 14:00</p>
+        <h5>Inspektor RODO:</h5>
+        <p>Zbigniew Miszczak, <a href="mailto:zbigniew.miszczak@cbi24.pl">zbigniew.miszczak@cbi24.pl</a></p>
     </>
 }
