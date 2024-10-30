@@ -32,6 +32,7 @@ export default async function Aktualnosci() {
         <ul>
             {posts.map((post) => {
                 const date = new Date(post?._updatedAt);
+                console.log('t')
                 return <li key={post._id}>
                     <h3>{post?.title}</h3>
                     <i>{date.toLocaleString('pl-PL')}</i>
@@ -41,12 +42,13 @@ export default async function Aktualnosci() {
                         />
                     }
                     {
-                        post.mainImage && <image
-                        //@ts-ignore
+                        // eslint-disable-next-line @next/next/no-img-element
+                        post.mainImage && <img
                         src={urlForImage(post.mainImage)}
+                        // @ts-ignore
                         alt={post.mainImage.alt}
-                        width={'50'}
-                        height={'50'}
+                        // width={'500'}
+                        // height={'300'}
                         />
                     }
                     <hr/>
