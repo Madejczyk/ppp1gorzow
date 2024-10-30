@@ -48,7 +48,7 @@ export default async function Aktualnosci() {
                         // @ts-ignore
                         alt={post.mainImage.alt}
                         style={{
-                            maxWidth: '90%'
+                            maxWidth: '95%'
                         }}
                         />
                     }
