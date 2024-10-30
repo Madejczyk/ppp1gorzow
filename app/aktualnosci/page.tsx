@@ -1,11 +1,13 @@
 import {sanityFetch} from '../../sanity/lib/client'
-import type { TypedObject } from "sanity";
+import type { Image, TypedObject } from "sanity";
 import { PortableComponent } from "../common/PortableComponent";
 import { getMetadata } from "../common/Title";
+import { urlForImage } from '@/sanity/lib/image';
 
 type Post = {
   _id: string
   title?: string
+  mainImage?: Image,
   body?: TypedObject | TypedObject[]
   _updatedAt: number
 }
@@ -18,6 +20,7 @@ export default async function Aktualnosci() {
         query: `*[_type == "post"] {
         title,
         body,
+        mainImage,
         _updatedAt,
         _id,
       } | order(_updatedAt desc)`,
@@ -35,6 +38,14 @@ export default async function Aktualnosci() {
                     {
                         post.body && <PortableComponent
                             value={post.body}
+                        />
+                    }
+                    {
+                        post.mainImage && <image
+                        src={urlForImage(post.mainImage)}
+                        alt={post.mainImage.alt}
+                        width={'50'}
+                        height={'50'}
                         />
                     }
                     <hr/>

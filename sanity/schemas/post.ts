@@ -61,6 +61,21 @@ export default defineType({
         //     type: 'datetime',
         //     readOnly: true
         // }),
+        defineField({
+            name: 'mainImage',
+            title: 'Zdjęcie',
+            type: 'image',
+            options: {
+                hotspot: true,
+            },
+            fields: [
+                {
+                    name: 'alt',
+                    type: 'string',
+                    title: 'Alternatywny tekst',
+                }
+            ]
+        }),
     ],
     preview: {
         select: {
