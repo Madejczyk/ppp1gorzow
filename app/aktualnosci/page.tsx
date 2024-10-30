@@ -47,8 +47,9 @@ export default async function Aktualnosci() {
                         src={urlForImage(post.mainImage)}
                         // @ts-ignore
                         alt={post.mainImage.alt}
-                        // width={'500'}
-                        // height={'300'}
+                        style={{
+                            maxWidth: '90%'
+                        }}
                         />
                     }
                     <hr/>
