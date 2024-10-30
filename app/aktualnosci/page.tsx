@@ -42,6 +42,7 @@ export default async function Aktualnosci() {
                     }
                     {
                         post.mainImage && <image
+                        //@ts-ignore
                         src={urlForImage(post.mainImage)}
                         alt={post.mainImage.alt}
                         width={'50'}
