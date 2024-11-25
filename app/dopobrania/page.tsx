@@ -39,7 +39,7 @@ const listOfFiles = [
     },
     {
         href:'/pliki/Zgoda_na_badania.doc',
-        title:'Zgoda na badania (33 KB, DOC)'
+        title:'Zgoda na badania (42 KB, DOC)'
     }
 ]
 
