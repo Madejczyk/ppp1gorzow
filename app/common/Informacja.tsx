@@ -12,6 +12,9 @@ export const Informacja = () => {
         <p>
             email: <a href="mailto:sekretariat@ppp1gorzow.pl">sekretariat@ppp1gorzow.pl</a>
         </p>
+        <p>
+            Adres do e-Doręczeń: AE:PL-37794-23943-UGSIS-16
+        </p>
         <h4>
     Godziny pracy:
         </h4>
