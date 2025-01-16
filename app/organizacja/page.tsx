@@ -19,7 +19,7 @@ export default function Organizacja() {
             target="_blank"
             rel="noopener noreferrer"
             title='Link otwiera się w nowym oknie przeglądarki'
-        >Statut (270 KB, PDF)</Link></li>
+        >Statut (273 KB, PDF)</Link></li>
         <li><Link
             href="/pliki/Plan_pracy_PPP-1_2024-2025.doc"
             target="_blank"
