@@ -38,6 +38,12 @@ export default function Organizacja() {
             rel="noopener noreferrer"
             title='Link otwiera się w nowym oknie przeglądarki'
         >Standardy ochrony małoletnich (1048 KB, PDF)</Link></li>
+        <li><Link
+            href="/pliki/Deklaracja_dostępności_2025.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            title='Link otwiera się w nowym oknie przeglądarki'
+        >Deklaracja dostępności 2025 (149 KB, PDF)</Link></li>
         </ul>
     </main>
 }
