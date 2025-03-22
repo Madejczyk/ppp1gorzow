@@ -1,49 +1,37 @@
 import Link from "next/link";
 import { getMetadata } from "../common/Title";
+import { sanityFetch } from "@/sanity/lib/client";
 const title = 'Organizacja'
 export const metadata = getMetadata(title)
 
-export default function Organizacja() {
+type Doc = {
+    title: string,
+    file: {
+        url: string
+    }
+}
+
+export default async function Organizacja() {
+    const docs: Doc[] = await sanityFetch({
+        query: `*[_type == "organization"]{
+            title,
+            "file": file.asset->{url},
+            } | order(title asc)`,
+        tags: ["organization"],
+    });
+
     return <main>
         <h2>{title}</h2>
         <ul>
         <li><Link href="/kadra">Kadra</Link></li>
-        <li><Link
-            href="/pliki/Koncepcja_PPP1.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            title='Link otwiera się w nowym oknie przeglądarki'
-        >Koncepcja (280 KB, PDF)</Link></li>
-        <li><Link
-            href="/pliki/Statut_PPP1.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            title='Link otwiera się w nowym oknie przeglądarki'
-        >Statut (273 KB, PDF)</Link></li>
-        <li><Link
-            href="/pliki/Plan_pracy_PPP-1_2024-2025.doc"
-            target="_blank"
-            rel="noopener noreferrer"
-            title='Link otwiera się w nowym oknie przeglądarki'
-        >Plan pracy (126 KB, DOC)</Link></li>
-        <li><Link
-            href="/pliki/Wersja_skrócona_standardy_PPP1.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            title='Link otwiera się w nowym oknie przeglądarki'
-        >Standardy ochrony małoletnich - wersja skrócona (179 KB, PDF)</Link></li>
-        <li><Link
-            href="/pliki/Standardy_ochrony_małoletnich.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            title='Link otwiera się w nowym oknie przeglądarki'
-        >Standardy ochrony małoletnich (1048 KB, PDF)</Link></li>
-        <li><Link
-            href="/pliki/Deklaracja_dostępności_2025.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            title='Link otwiera się w nowym oknie przeglądarki'
-        >Deklaracja dostępności 2025 (149 KB, PDF)</Link></li>
+        {
+            docs.map(({file, title}) => <li key={title}><Link
+                href={file.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                title='Link otwiera się w nowym oknie przeglądarki'
+            >{title}</Link></li>)
+        }
         </ul>
     </main>
 }

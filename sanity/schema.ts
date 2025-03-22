@@ -5,7 +5,10 @@ import blockContent from './schemas/blockContent'
 import post from './schemas/post'
 // import author from './schemas/author'
 import page from './schemas/page'
+import offer from './schemas/offer'
+import organization from './schemas/organization'
+import toDownload from './schemas/toDownload'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-    types: [post, page, blockContent],
+    types: [post, page, blockContent, organization, offer, toDownload],
 }
