@@ -23,7 +23,7 @@ export default function Dostepnosc() {
         </ul>
         <h3>Przygotowanie deklaracji dostępności</h3>
         <p>Data sporządzenia deklaracji: <span id='a11y-data-sporzadzenie'>2024-03-28</span>.</p>
-        <p>Data ostatniego przeglądu deklaracji: <span id='a11y-data-przeglad'>2024-04-05</span>.</p>
+        <p>Data ostatniego przeglądu deklaracji: <span id='a11y-data-przeglad'>2026-03-10</span>.</p>
         <p>Deklarację sporządzono na podstawie samooceny przeprowadzonej przez podmiot prywatny.</p>
         <h3>Skróty klawiaturowe</h3>
         <p>Na tej stronie internetowej można korzystać ze standardowych skrótów klawiaturowych.</p>
