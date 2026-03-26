@@ -15,9 +15,6 @@ export default function Home() {
         </ul>
 
         <Informacja/>
-        <iframe width="420" height="315"       
-src="https://www.youtube.com/embed/Hv2d0xkTEOo?autoplay=1">
-</iframe>
         <Map/>
     </main>
 }
