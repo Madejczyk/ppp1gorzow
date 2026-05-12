@@ -22,6 +22,8 @@ export const Informacja = () => {
         <p>wtorek - czwartek 7:30 - 15:30</p>
         <p>piątek 7:30 - 14:00</p>
         <h4>Inspektor RODO:</h4>
-        <p>Zbigniew Miszczak, <a href="mailto:zbigniew.miszczak@cbi24.pl">zbigniew.miszczak@cbi24.pl</a></p>
+        <p>Zbigniew Miszczak</p>
+        <p>tel: 576-400-511</p>
+        <p>email: <a href="mailto:zbigniew.miszczak@cbi24.pl">zbigniew.miszczak@cbi24.pl</a></p>
     </>
 }
